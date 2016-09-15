@@ -1,12 +1,63 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
 
-// .btn-dark {
-//   width: 25px;
-//   height: 10px;
-// }
-// @media (min-width: 548px) {
-//   .name-title {
-//     font-size: 3em;
-//   }
-// }
+
+// TITLE OF EACH SECTION
+.name-title {
+  color: #ffffff;
+}
+
+.job-title {
+  color: #ffffff;
+  font-size: 40px;
+}
+
+#about-me-title {
+  color: #ffffff;
+}
+
+#my-work-top {
+  color: #ffffff;
+}
+
+// PORTFOLIO SECTION
+.portfo-titles {
+  color: #ffffff;
+}
+
+// MEDIA QUERIES
+@media (max-width: 601px) {
+  .text-vertical-center h1 {
+    font-size: 4em;
+    margin-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .text-vertical-center h3  {
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: 460px) {
+  #contact {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 550px) {
+  .text-vertical-center h1 {
+    font-size: 3.5em;
+  }
+}
+
+@media (max-width: 479px) {
+  .text-vertical-center h1 {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 415px) {
+  .text-vertical-center h1 {
+    font-size: 2.5em;
+  }
+}
