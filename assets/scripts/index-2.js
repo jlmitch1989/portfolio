@@ -5,6 +5,6 @@ $(function() {
       let scrollTo = $(this).attr('href');
       $('html, body').animate({
           scrollTop: parseInt($(scrollTo).offset().top)
-      }, 2000);
+      }, 1500);
   });
 });
