@@ -1,0 +1,442 @@
+/*!
+ * Start Bootstrap - Stylish Portfolio (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+/* Global Styles */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+/*Back to top Button*/
+.back-to-top {
+  text-align: center;
+}
+
+/*NAV*/
+.nav {
+  list-style: none;
+  margin: 0;
+  background: #337ab7;
+
+  display: flex;
+  justify-content: flex-end;
+  flex-flow: row wrap;
+}
+
+.nav a {
+/*gets rid of lines under links*/
+  text-decoration: none;
+  display: block;
+  padding: 14px;
+  color: white;
+  font-size: 20px;
+}
+
+.nav a:hover {
+  background: white;
+  color: #337ab7;
+}
+
+@media all and (max-width: 800px) {
+  .nav {
+    justify-content: space-around
+  }
+}
+
+@media all and (max-width: 600px) {
+  .nav {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+
+  .nav a {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+
+/*   The last li tag does not have a border bottom */
+  .nav li:last-of-type a {
+    border-bottom: none;
+  }
+
+  .text-vertical-center h1 {
+    font-size: 1em;
+  }
+}
+
+
+/*NAV END*/
+
+/*HEADER*/
+.my-pic {
+  margin-top: 15px;
+  height: 265px;
+  width: 250px;
+  border: 5px solid white;
+  border-radius: 65px;
+}
+
+.top-buttons {
+  margin-bottom: 25px;
+}
+
+/*ABOUT ME SECTION*/
+#about {
+  background-color: #337ab7;
+}
+
+.lead {
+  padding-left: 70px;
+  padding-right: 70px;
+  font-size: 22px;
+  color: white;
+}
+
+/*SKILLS SECTION*/
+#services {
+  background-color: #000000;
+  text-align: center;
+}
+
+/*Work Descriptions*/
+.game-description {
+  padding-left: 0;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  text-align: left;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.monster-me-description {
+  padding-left: 0;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  text-align: left;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.e-commerce-description {
+  padding-left: 0;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  text-align: left;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.first-skills-col {
+  font-size: 65px;
+  text-align: center;
+}
+
+.second-skills-col {
+  font-size: 65px;
+}
+
+.third-skills-col {
+  font-size: 65px;
+}
+
+.fourth-skills-col {
+  line-height: 15px;
+  font-size: 25px;
+}
+
+/*SKILLS SECTION END*/
+
+/*FOOTER*/
+#contact-me {
+  background-color: black;
+}
+
+.contact-me-title {
+  color: white;
+}
+
+.text-muted {
+  margin-top: 20px;
+}
+
+body {
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.text-vertical-center {
+    /*display: table-cell;*/
+    text-align: center;
+    vertical-align: middle;
+}
+
+.text-vertical-center h1 {
+    margin-top: 10px;
+    padding: 0;
+    font-size: 4.5em;
+    font-weight: 700;
+}
+
+/* Custom Button Styles */
+
+.btn-dark {
+    margin-right: 5px;
+    border-radius: 10px;
+    color: #000;
+    background-color: rgb(255,255,255);
+}
+
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.btn-light {
+    border-radius: 0;
+    color: #333;
+    background-color: rgb(255,255,255);
+}
+
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active {
+    color: #333;
+    background-color: rgba(255,255,255,0.8);
+}
+
+/* Custom Horizontal Rule */
+
+hr.small {
+    max-width: 100px;
+}
+
+/* Side Menu */
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    transform: translateX(250px);
+    overflow-y: auto;
+    background: #222;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 55px;
+    font-size: 18px;
+    line-height: 55px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+#menu-toggle {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#sidebar-wrapper.active {
+    right: 250px;
+    width: 250px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.toggle {
+    margin: 5px 5px 0 0;
+}
+
+/* Header */
+
+.header {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url('../../img/space-1.jpg') no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* About */
+
+.about {
+    padding: 50px 0;
+    background-color: black;
+}
+
+/* Services */
+
+.services {
+    padding: 50px 0;
+}
+
+.service-item {
+    margin-bottom: 30px;
+}
+
+
+/*QUOTE*/
+.callout {
+    display: table;
+    width: 100%;
+    height: 400px;
+    color: #fff;
+    background: url(../../img/space-2.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.quote-container {
+  display: flex;
+}
+
+.quote {
+  margin-top: 120px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+/* Portfolio */
+.portfolio {
+    padding: 50px 0;
+    background-color: #337ab7;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+.img-portfolio {
+    margin: 0 auto;
+    width: 463px;
+}
+
+.img-portfolio:hover {
+    opacity: 0.8;
+}
+
+/* Call to Action */
+
+.call-to-action {
+    padding: 50px 0;
+    background-color: black;
+}
+
+.call-to-action .btn {
+    margin: 10px;
+}
+
+
+/* Footer */
+
+footer {
+    padding: 100px 0;
+}
+
+#to-top {
+  display: none;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+}
+
+
+@media (max-width: 548px) {
+  .text-vertical-center h1 {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 3em;
+    margin-top: 10px;
+  }
+  .text-vertical-center h3 {
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: 460px) {
+  #contact {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .text-vertical-center h1 {
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: 330px) {
+  .text-vertical-center h1 {
+    font-size: 2.5em;
+  }
+}

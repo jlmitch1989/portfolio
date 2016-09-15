@@ -4,4 +4,8 @@
 // var example = require('./example');
 
 // use require without a reference to ensure a file is bundled
-require('./example');
+console.log("A");
+// require('assets/scripts/js/bootsrap.js');
+// require('assets/scripts/js/bootsrap.min.js');
+// require('assets/scripts/js/jquery.js');
+require('./index-2');
